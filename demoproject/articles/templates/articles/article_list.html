@@ -8,6 +8,15 @@
 </head>
 <body>
     <h1>Article List</h1>
+    <div class="article">
+        {% for art in article %}
+        <div class="art" >
+            <h2>{{art.name}}</h2>
+            <h3>{{art.author}}</h3>
+        </div>
+        {% endfor %}
+    </div>
+
     
 </body>
 </html>
